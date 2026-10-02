@@ -1,0 +1,155 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #8a0909;
+    height: 100px;
+    display: flex; 
+    align-items: center;
+    position: fixed;   /* fix navbar at top */
+    width: 100%;
+    z-index: 999; /*navigation bar always in front of the content*/
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: flex-start; /* push content to the left */
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+#navbar__logo {
+    color: #e4d90c;
+    display: flex;
+    cursor: pointer; /*change pointer to clickable hand signal*/
+}
+
+#navbar__logo img {
+    height: 80px;         /* logo height */
+    width: auto;          /* keep aspect ratio */
+    max-width: 100%;      /* prevent overflow */
+    flex-shrink: 0;       /* don’t let flexbox squash it */
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;     /*remove bullet points*/
+}
+
+.navbar__item {
+    height: 100px;        /* same as navbar height */
+    display: flex;
+    align-items: center;  /* center link vertically */
+    margin: 0 5px;        /*gap between navbar items*/
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;   /*remove underline*/
+    padding: 6px 20px;       /* bubble size */
+    border-radius: 20px;     /* rounded bubble */
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;   
+}
+
+.navbar__links:hover {
+    background-color: #e4d90c;
+    color: #000;  /*colour of hovered text*/
+}
+
+/* Hero section */
+main {
+    padding-top: 80px; /* prevent overlap with fixed navbar */
+}
+
+.hero {
+    background-color: #fdfdfdf0;   /* light background */
+    width: 100%;
+    min-height: calc(100vh - 100px); /* full viewport minus navbar */
+    display: flex;
+    flex-direction: column;       /* stack text + bubble vertically */
+    align-items: center;          /* center horizontally */
+    justify-content: center;      /* center vertically */
+    padding: 20px;
+    text-align: center;           /* center text inside */
+}
+
+/* Hero container (text block) */
+.hero__container {
+    color: black;                 
+    padding: 20px;                
+    max-width: 100%;             
+    text-align: center;           
+    width:100%
+}
+
+.hero__title {
+    font-size: 3rem;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.hero__subtitle {
+    font-size: 1.2rem;    
+}
+
+/* Homepage fact bubble */
+.fact-bubble {
+  background-color: #b3b0b0;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px auto;        
+  max-width: 800px;         
+  width: 100%;              
+  text-align: left;         
+}
+
+.fact-bubble h2 {
+    margin-bottom: 10px;
+    color: black;                
+    font-size: 1.5rem;           
+    text-align: center;
+}
+
+.fact-bubble ul {
+    list-style: none;            
+    padding-left: 0;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.fact-bubble li::before {
+    content: "•";                
+    color: black;                
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;                
+    padding: 5px;
+}
+
+/* Footer section */
+.footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 5px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

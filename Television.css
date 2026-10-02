@@ -1,0 +1,65 @@
+/* Hero section specific to Television page */
+.hero {
+  background-color: #fdfdfdf0;   /* light background with transparency */
+  width: 100%;                  /* full width of screen */
+  min-height: calc(100vh - 100px); /* viewport height minus navbar */
+  display: flex;
+  flex-direction: column;       /* stack content vertically */
+  padding: 20px;                /* spacing inside hero */
+}
+
+/* Fact bubble styling */
+.fact-bubble {
+  background-color: #b3b0b0;    /* default bubble color */
+  border-radius: 30px;          /* rounded corners */
+  padding: 30px;                /* space inside bubble */
+  margin: 20px auto;            /* center horizontally */
+  overflow-wrap: break-word;    /* wrap long words */
+  word-wrap: break-word;        /* legacy support */
+  max-width: 80%;
+}
+
+/* Fact bubble header */
+.fact-header h2 {
+  color: black;
+  font-size: 1.2rem;
+}
+
+/* Fact bubble list items */
+.fact-bubble li {
+  font-size: 1.2rem;
+}
+
+/* Fact bubble paragraphs */
+.fact-bubble p {
+  color: black;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+/* Hero container headings */
+.hero__container h3 {
+  color: black;
+}
+
+.hero__container h4 {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Hero container paragraphs */
+.hero__container p {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  max-width: 50%;     /* restrict width to half the screen */
+  margin: 0 auto;     /* center horizontally */
+}
+
+/* Image styling */
+img {
+  height: auto;        /* maintain aspect ratio */
+  width: 80%;          /* scale images */
+  max-width: 100%;     /* prevent overflow */
+}

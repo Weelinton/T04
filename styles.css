@@ -70,7 +70,7 @@
 
 /* Hero section */
 main {
-    padding-top: 80px; /* prevent overlap with fixed navbar */
+    padding-top: 100px; /* prevent overlap with fixed navbar */
 }
 
 .hero {
@@ -85,57 +85,14 @@ main {
     text-align: center;           /* center text inside */
 }
 
-/* Hero container (text block) */
-.hero__container {
-    color: black;                 
-    padding: 20px;                
-    max-width: 100%;             
-    text-align: center;           
-    width:100%
+h1{
+    padding:30px;
 }
 
-.hero__title {
-    font-size: 3rem;
-    color: black;
-    padding-bottom: 5px;
-}
-
-.hero__subtitle {
-    font-size: 1.2rem;    
-}
-
-/* Homepage fact bubble */
-.fact-bubble {
-  background-color: #b3b0b0;
-  border-radius: 30px;
-  padding: 20px;
-  margin: 20px auto;        
-  max-width: 800px;         
-  width: 100%;              
-  text-align: left;         
-}
-
-.fact-bubble h2 {
-    margin-bottom: 10px;
-    color: black;                
-    font-size: 1.5rem;           
-    text-align: center;
-}
-
-.fact-bubble ul {
-    list-style: none;            
-    padding-left: 0;
-    color: black;
-    font-size: 1.2rem;
-}
-
-.fact-bubble li::before {
-    content: "•";                
-    color: black;                
-    font-weight: bold;
-    display: inline-block;
-    width: 1.5em;                
-    padding: 5px;
+.responsive-svg-container {
+    margin: 0 auto; /* center */
+    width: 100%; /* fill parent width */
+    max-width: 1200px; /* cap max width */
 }
 
 /* Footer section */
